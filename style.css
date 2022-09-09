@@ -1,0 +1,295 @@
+html {
+  overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h1,h3 {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* contacts info */
+/* .landing {
+    width: auto;
+    position: relative;
+}
+
+.contactInfo {
+    width: auto;
+    height: 50px;
+    background: #D4F6CC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.contact {
+    display: flex;
+    padding: 10px;
+}
+
+
+.address li {
+    margin: 0 15px;
+}
+
+.address li a,span {
+    color: #2D2424;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.fa,.fab,.fas {
+    color: #01013D;
+}
+
+.socialLink {
+    margin: 0 10px;
+} */
+
+/*=============== Heager============*/
+header {
+    width: 100%;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav {
+    text-align: center;
+    flex: 1;
+}
+
+nav .navigation li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navigation li ::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000093;
+    display: block;
+    margin:5px  auto;
+    transition: 0.5s;
+}
+
+.navigation li:hover ::after {
+    width: 100%;
+}
+
+.navigation li a {
+    color:  #000093;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+
+.search-icon {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.input-box {
+  background: #000093;
+  padding: 20px;
+}
+
+.input-box input {
+  height: 30px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-10%);
+}
+
+.input input::placeholder {
+  color: #000093;
+}
+
+.mobile-exit, .mobile-cta {
+    display: none;
+    cursor: pointer;
+}
+
+/* Intro section */
+.intro {
+    width: 100%;
+    background-image: linear-gradient( rgba( 4,9,30,.7 ), rgba( 4,9,30,.7 ) ), url(image/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 80vh;
+}
+
+.text-box {
+    width: 90%;
+    color: #FFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.text-box h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.text-box .hero-btn {
+    display: inline-block;
+    margin: 30px 10px 0;
+    border-radius: 0.8em;
+}
+
+.service-btn {
+    font-size: 1rem;
+    background: #FFFF;
+    color: #000093;
+    padding: 0.7em;
+
+}
+
+.service-btn:hover {
+    background: #000093;
+    color: #FFFF;
+}
+
+.contact-btn {
+    background: transparent;
+    color: #FFFF;
+    border: 1px solid;
+    padding: 0.5em;
+}
+
+.contact-btn:hover {
+    background: #FFFF;
+    color: #000093;
+}
+
+/*================== Services =======================*/
+
+.services {
+    margin: 40px 0;
+    width: 100%;
+    padding:30px  60px 10px;
+}
+
+.service-header {
+    text-align: center;
+    margin: 10px 0 40px;
+}
+
+.service-header h1 {
+    font-size: 2rem;
+}
+
+.service-header .fa-wrench {
+    transform: rotate(45deg);
+    font-size: 1.5rem;
+    color: #000093;
+}
+
+.services .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
+    justify-content: center;
+}
+
+.services .box {
+    background: #eef3f7;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 0 10px 40px 10px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, .2);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.services .box:hover {
+    transform: scale(1.1);
+  }
+
+.services .icon {
+     margin: 0 auto 15px auto;
+     padding-top: 12px;
+     display: inline-block;
+     text-align: center;
+     border-radius: 50%;
+     width: 60px;
+     height: 60px;
+}
+
+.services .service-icon {
+    font-size: 36px;
+    line-height: 1;
+    color: #1F5ABB;
+}
+.services .box h3 {
+    margin: 10px 0;
+    color: #111;
+}
+
+.services .box:hover  h3{
+  color: #000093;
+}
+
+.services .box:hover .service-icon {
+    color: #000093;
+}
+
+.services p {
+    color: #777;
+    line-height: 22PX;
+}
+
+/*============ why choose us ============*/
+.whyChooseUs {
+    width: 100%;
+    padding: 20px;
+    margin: 5px 0;
+}
+
+.whyChooseUs h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.whyChooseUs .row {
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax( 400px, 1fr ) );
+    justify-content: center;
+}
+
+.whyChooseUs .row .box {
+    display: flex;
+    border: 2px solid #1F5ABB;
+    padding: 10px;
+    margin: 10px;
+}
+
+.whyChooseU span {
+    padding: 10px;
+    border: 1px solid #1F5ABB;
+    color: #1F5ABB;
+}

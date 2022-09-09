@@ -1,0 +1,48 @@
+@media(max-width: 768px) {
+
+    .search {
+        display: none;
+    }
+    nav .navigation li {
+        display: block;
+        margin: 10px ;
+    }
+
+    .mobile-cta,.mobile-exit {
+        display: block;
+        margin: 10px;
+    }
+
+
+    nav {
+        position: absolute;
+        background: #000093;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .navigation {
+        padding: 30px;
+    }
+
+    .navigation li a {
+        color: #FFF;
+    }
+
+    .intro {
+      height: 350px;
+    }
+
+    .text-box h3 {
+      font-size: 0.7rem;
+    }
+
+    .text-box h1 {
+      font-size: 2rem;
+    }
+}
